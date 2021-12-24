@@ -84,8 +84,6 @@
          softAssertImpl.assertThat("Verify status code is 200",responseMovieById.getStatusCode(), 200);
          softAssertImpl.assertThat("Verify title is correct",responseMovieActualById.getTitle(),title);
          softAssertImpl.assertThat("Verify content is correct", responseMovieActualById.getContent(), content);
-         movieSimple.clearUserInfoByUsername(username);
-         movieSimple.clearMovieByTitle(title);
          softAssertImpl.assertAll();
 
      }
