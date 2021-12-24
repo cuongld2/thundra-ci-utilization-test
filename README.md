@@ -1,9 +1,9 @@
 Collection of badges for Thundra Foresight : 
 
-[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/utilization/0efb3b14-7550-4961-98de-37d51e38d251)](https://foresight.docs.thundra.io/)
+[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/utilization/f3db3531-fd03-48f5-b574-fb6ac3a71669)](https://foresight.docs.thundra.io/)
 
-[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/success/0efb3b14-7550-4961-98de-37d51e38d251)](https://foresight.docs.thundra.io/)
+[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/test/f3db3531-fd03-48f5-b574-fb6ac3a71669)](https://foresight.docs.thundra.io/)
 
-[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/test/0efb3b14-7550-4961-98de-37d51e38d251)](https://foresight.docs.thundra.io/)
+[![Foresight Docs](https://foresight.service.thundra.io/public/api/v1/badge/success/f3db3531-fd03-48f5-b574-fb6ac3a71669)](https://foresight.docs.thundra.io/)
 
 
