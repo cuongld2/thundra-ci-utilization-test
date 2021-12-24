@@ -88,6 +88,39 @@
 
      }
 
+     @Test
+     public void test_create_new_user_success_case(){
+
+         String username = "cuongld123@abc.com";
+         userInfoModel.setFullname("Le Dinh Cuong");
+         userInfoModel.setUsername(username);
+         userInfoModel.setPassword("cuongld");
+         Response response = userInfoApi.createUser(userInfoModel);
+         softAssertImpl.assertThat("Verify status code is 200", response.getStatusCode(), 200);
+         softAssertImpl.assertAll();
+
+     }
+
+     @Test
+     public void authen_user_credential_success(){
+
+         String username = RandomStringUtils.randomAlphabetic(8) + "@abc.com";
+         String password = RandomStringUtils.randomAlphabetic(4);
+         userInfoModel.setFullname(RandomStringUtils.randomAlphabetic(4) + " " + RandomStringUtils.randomAlphabetic(5));
+         userInfoModel.setUsername(username);
+         userInfoModel.setPassword(password);
+         userInfoApi.createUser(userInfoModel);
+
+         authenModel.setUsername(username);
+         authenModel.setPassword(password);
+
+         Response response = authenApi.authenUser(authenModel);
+         Token actualResponse = response.as(Token.class);
+         softAssertImpl.assertThat("Verify token is not null", actualResponse.getToken().isEmpty(),false);
+         softAssertImpl.assertAll();
+
+     }
+
      @AfterClass
      public static void tearDown(){
 
